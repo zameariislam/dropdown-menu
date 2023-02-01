@@ -55,6 +55,7 @@ nav ul {
 
 nav ul li {
     padding: 21px;
+    position: relative;
 
 
 }
@@ -68,17 +69,48 @@ nav ul li a {
 
 
 }
-
-nav ul li a:hover {
+nav ul li:hover a {
     color: orange;
-
 }
+
+nav ul li:hover ul li a {
+    color:white;
+}
+
+
+
+
+
 
 /* dropdown  css */
 nav ul ul {
+
     flex-direction: column;
     position: absolute;
-    background-color: blue;
-    margin-top: 20px;
+    background-color: black;
+    width: 150px;
+    padding:10px 0px ;
+   
+    left: -9999px;
+    top: 57px;
+   
+}
+nav ul li:hover ul {
+    left: 0px;
+
+
+}
+
+nav ul  ul li{
+    padding: 5px 15px;
+
+
+}
+
+
+nav ul  ul li:hover{
+ 
+   background: red;
+
 
 }
