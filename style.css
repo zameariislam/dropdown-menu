@@ -1,0 +1,84 @@
+/* common css  */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #3C4C6A;
+
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+/* Header CSS  */
+.inner_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_area {
+    font-family: sans-serif;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 2;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    padding: 21px;
+
+
+}
+
+nav ul li a {
+    font-family: sans-serif;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+
+}
+
+nav ul li a:hover {
+    color: orange;
+
+}
+
+/* dropdown  css */
+nav ul ul {
+    flex-direction: column;
+    position: absolute;
+    background-color: blue;
+    margin-top: 20px;
+
+}
